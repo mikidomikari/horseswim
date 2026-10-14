@@ -21,8 +21,7 @@ public abstract class AbstractHorseEntityMixin extends AnimalEntity {
     @Inject(method = "tickMovement", at = @At("HEAD"))
     private void horseswim$floatUp(CallbackInfo ci) {
         // llamas and camels already handle water their own way, leave them be
-        if (!this.isTouchingWater() || this instanceof LlamaEntity || this instanceof CamelEntity) return;
-
+        if (!this.isTouchingWater() || (Object) this instanceof LlamaEntity || (Object) this instanceof CamelEntity) return;
         // same nudge swimUpward does, just without needing a jump input.
         // runs on both sides on purpose so the riding client doesn't desync
         if (this.getFluidHeight(FluidTags.WATER) > this.getHeight() * 0.4) {
