@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "horseswim",
+  "version": "${version}",
+  "name": "Horse Swim",
+  "description": "Horses and donkeys float instead of slowly sinking.",
+  "license": "MIT",
+  "environment": "*",
+  "mixins": ["horseswim.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ["1.21", "1.21.1"],
+    "java": ">=21"
+  }
+}

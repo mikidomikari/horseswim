@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "dev.horseswim.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractHorseEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
